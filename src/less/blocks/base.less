@@ -1,0 +1,98 @@
+@import '../fonts/fonts.less';
+.reset();
+
+.wrapper{
+    .wrapper();
+}
+
+.scrollbar(@color_scrollbar-track, @color_scrollbar-thumb);
+
+html {
+  // scroll-behavior: smooth;
+  &:not([data-scroll='0']) {
+ 
+  
+    header {
+      background: rgba(2, 2, 2, 0.4);
+      box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+      .sm-block({
+        padding-bottom: 20px;    
+      });
+      
+    }
+    
+  }
+}
+
+@font-face {
+  .font(@font; @fontBold);
+}
+@font-face {
+  .font(@font; @fontRegular);
+}
+@font-face {
+  .font(@Roboto; "@{Roboto}-Regular");
+}
+
+@font-face {
+  .font(@Roboto; "@{Roboto}-Bold");
+}
+
+@font-face {
+  .font(@Roboto; "@{Roboto}-Black");
+}
+
+@font-face {
+  .font(@Roboto; "@{Roboto}");
+}
+
+@font-face {
+  .font(@Poppins; "@{Poppins}-Bold");
+}
+
+@font-face {
+  .font(@Poppins; "@{Poppins}-Regular");
+}
+
+@font-face {
+  .font(@OpenSans; "@{OpenSans}-Regular");
+}
+
+@font-face {
+  .font(@Nunito_Sans; "@{Nunito_Sans}-Regular");
+}
+
+@font-face {
+  .font(@Nunito_Sans; "@{Nunito_Sans}-Bold");
+}
+
+@font-face {
+  .font(@Nunito_Sans; "@{Nunito_Sans}-Black");
+}
+
+@font-face {
+  .font(@OpenSans; "@{OpenSans}-Bold");
+}
+
+@font-face {
+  .font(@OpenSans; "@{OpenSans}");
+}
+
+
+
+
+body {
+  font-family: @fontRegular;
+}
+a, button{
+  cursor: pointer;
+  &:focus{
+      outline: none;
+  }
+}
+input{
+  cursor: text;
+  &:focus{
+      outline: none;
+  }
+}
