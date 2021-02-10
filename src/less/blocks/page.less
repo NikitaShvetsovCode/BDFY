@@ -21,13 +21,22 @@
         font-family: "@{OpenSans}-Bold";
         font-size: 18px;
         color: @color_dark;
+        line-height: 33px;
         &_nunito {
             font-family: "@{Nunito_Sans}-Regular";
             color: @color_white;
+            &-small {
+                font-family: "@{Nunito_Sans}-Regular";
+                color: #ade0ce;
+                font-size: 14px;
+            }
         }
     }
 
     &__link {
+        font-family: "@{Nunito_Sans}-Regular";
+        text-decoration: none;
+        color: @color_white;
         
     }
 
@@ -53,6 +62,49 @@
         color: @color_white;
         background-color: transparent;
         border: 1px solid #fff;
+        &_green {
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            border-radius: 35px;
+            height: 55px;
+            font-size: 14px;
+            letter-spacing: 1px;
+            line-height: 30px;
+            font-family: '@{OpenSans}-Bold';
+            //text-transform: uppercase;
+            color: @color_white;
+            background-color: @color_green;
+            border: 1px solid #fff;
+            padding-right: 15px;
+            padding-left: 15px;
+            border: none;
+        }
+
+        &_transparent {
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            border-radius: 35px;
+            height: 55px;
+            font-size: 14px;
+            letter-spacing: 1px;
+            line-height: 30px;
+            font-family: '@{OpenSans}-Bold';
+            //text-transform: uppercase;
+            border: none;
+            color: @color_white;
+            background-color: transparent;
+            border: 1px solid #fff;
+            padding-right: 15px;
+            padding-left: 15px;
+            
+        }
+
         &:hover {
             background-color: @color_green;
         }

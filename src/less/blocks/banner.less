@@ -1,26 +1,80 @@
 .banner{
-    .page__title-h1{
-      
+    background-image: url("../assets/img/img-bg-banner.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    //background-position: center;
+    //height: 100vh;
+    padding-bottom: 340px;
+    &-block {
+        .row-flex();
+        flex-wrap: nowrap;
+
+        &__slider {
+            .banner-btn{
+                
+                &_prev {
+                    border-radius: 35px;
+                    border: none;
+                    height: 30px;
+                }
+                &_next {
+                    
+                }
+            }
+            &-content {
+
+            }
+
+            .page__text {
+                color: @color_green;
+                margin-bottom: 10px;
+            }
+
+            .page__text_nunito-small {
+                .size(4);
+            }
+        }
+
+        &-description {
+            position: relative;
+            top: 140px;
+
+            
+            .page__title-h1 {
+                color: @color_white;
+                .size(3);
+                margin-bottom: 30px;
+            }
+
+            .page__text {
+                .size(12);
+                color: @color_white;
+                margin-bottom: 50px;
+            }
+
+            &__buttons {
+                .row-flex();
+                margin-bottom: 100px;
+                .page__btn_green {
+                    margin-right: 20px;
+                }
+            }
+
+            &__soc {
+                .row-flex();
+
+                &_facebook {
+                    .sprite(@icon-facebook);
+                    margin-right: 15px;
+                }
+                &_linked {
+                    .sprite(@icon-linked);
+                }
+            }
+        }
     }
-    .page__text{
-        
-    };
-    &.animated{
-        .page__title-h1 {
-            .animated({
-                .fadeInRight();
-                // .repeat(2);
-            });
-        }
-        
-        .page__text{
-            .animated({
-                .lightSpeedInRight();
-                //.repeat(3);
-            }, 5s);
-        }
-        .page__text{
-            //.delay(.5s);
-        }
-    }
+}
+
+#bannerSlider {
+    display: flex;
 }

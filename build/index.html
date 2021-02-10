@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
-		<title>Заголовок страницы</title>
+		<title>Заголовок страницы</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
 		<link rel="stylesheet" href="css/styles.css" type="text/css">
 	</head>
 	<body>
@@ -18,20 +18,43 @@
 						<div class="header-block__logo">
 							<div class="page__img"><img src="../assets/img/img-logo.png"></div>
 						</div>
-						<div class="header-block-nav">
-							<div class="header-block__Accueil"> <a class="page__text_nunito" href="#">Accueil</a></div>
-							<div class="header-block__Produits"> <a class="page__text_nunito" href="#">Produits</a></div>
-							<div class="header-block__Mission"> <a class="page__text_nunito" href="#">Mission</a></div>
-							<div class="header-block__Contact"> <a class="page__text_nunito" href="#">Contact</a></div>
-							<div class="header-block__fr"> <a class="page__text_nunito" href="#">fr</a></div>
-							<div class="header-block__en"> <a class="page__text_nunito" href="#">en</a></div>
-						</div>
+						<div class="header-block-nav"><a class="page__link" href="#">Accueil</a><a class="page__link" href="#">Produits</a><a class="page__link" href="#">Mission</a><a class="page__link" href="#">Contact</a><a class="page__link_lang" href="#">Fr</a><a class="page__link_lang" href="#">En</a></div>
 					</div>
 				</div>
 			</header>
-			<section class="banner"></section>
+			<section class="banner" id="banner">
+				<div class="wrapper">
+					<div class="banner-block">
+						<div class="banner-block-description">
+							<div class="page__title-h1">Pièces d'équipement lourd</div>
+							<div class="page__text">Nous sommes fiers de vous présenter nos produits et de vous aider à trouver le meilleur prix</div>
+							<div class="banner-block-description__buttons">
+								<div class="page__btn_green">Voir le catalogue</div>
+								<div class="page__btn_transparent">Contactez-nous</div>
+							</div>
+							<div class="banner-block-description__soc">
+								<div class="banner-block-description__soc_facebook"></div>
+								<div class="banner-block-description__soc_linked"></div>
+							</div>
+						</div>
+						<div class="banner-block__slider">
+							<div class="banner-block__slider-content">
+								<div id="bannerSlider">
+									<div class="page__img"><img src="assets/img/img-banner-obj.png"></div>
+									<div class="page__img"><img src="assets/img/img-banner-obj.png"></div>
+								</div>
+							</div>
+							<button class="banner-btn banner-btn_prev"></button>
+							<button class="banner-btn banner-btn_next"></button>
+							<div class="page__text">Roulements</div>
+							<div class="page__text_nunito-small">Roulements à billes; roulements de coupe. Disponibles selon vos exigences</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</div>
 		<script src="js/debug-grid-create.js"></script>
+		<script src="js/tiny-slider.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>

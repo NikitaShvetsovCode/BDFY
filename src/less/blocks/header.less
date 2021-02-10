@@ -1,18 +1,35 @@
 .header{
-    background-color: black;
+    //background-color: black;
     //position: fixed;
     position: sticky;
-    
+    top: 0;
+    padding-top: 20px;
+    padding-bottom: 17px;
     &-block {
         .row-flex();
         &__logo {
-            .size(3);
+            .size(4);
             .col();
+            .shift-right(3);
         }
 
-        &__Accueil , &__Produits , &__Mission , &__Contact {
-            .size(1);
-            .col();
+        &-nav {
+            margin-top: 12px;
+            .page__link {
+                
+                .col();
+                .size(1);
+                //.shift-left(1);
+                flex-wrap: nowrap;
+                margin-right: 30px;
+                //.shift-right(0.1);
+                &_lang {
+                    font-family: "@{Nunito_Sans}-Regular";
+                    text-decoration: none;
+                    color: @color_white;
+                    margin-right: 10px;
+                }
+            }
         }
     }
 }
