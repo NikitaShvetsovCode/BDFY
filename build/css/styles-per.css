@@ -580,6 +580,7 @@ input:focus {
   padding-top: 20px;
   padding-bottom: 17px;
   overflow: hidden;
+  z-index: 1000;
 }
 
 .header-block {
