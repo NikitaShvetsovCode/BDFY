@@ -1,0 +1,160 @@
+.information {
+    padding-bottom: 100px;
+    padding-top: 100px;
+    overflow: hidden;
+    .sm-block({
+        padding-bottom: 30px;
+                
+    });
+    .sm-block({
+        padding-top: 20px;
+                
+    });
+    &-block {
+        .row-flex();
+        .sm-block({
+            flex-direction: column;
+                    
+        });
+        //flex-wrap: nowrap;
+        &-description {
+            .col();
+            .size(6);
+            .sm-block({
+                .size(12);
+                        
+            });
+            .page__title-h2 {
+                .size(8);
+                .sm-block({
+                    .size(12);
+                            
+                });
+                margin-bottom: 30px;
+            }
+
+            .page__text {
+                .size(8);
+                .sm-block({
+                    .size(12);
+                            
+                });
+            }
+        }
+
+        &-items {
+            padding-top: 33px;
+            .size(6);
+            .col();
+            .shift-left(-1.8);
+            .sm-block({
+                .shift-left(.3);
+                .size(18);
+                        
+            });
+            &-item {
+                .row-flex();
+                .size(20);
+                flex-wrap: wrap;
+                .sm-block({
+                    flex-direction: column;
+                            
+                });
+                .first-item {
+                    background-image: url(../assets/img/img-information-item-1.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    margin-right: 30px;
+                    margin-bottom: 30px;
+                    .sm-block({
+                        //.shift-left(-.01);
+                                
+                    });
+                    .page__text {
+                        color: @color_white;
+                        position: relative;
+                        top: 30px;
+                        left: 50px;
+                        font-size: 25px;
+                    }
+
+                    .page__img {
+                        position: relative;
+                        top: 110px;
+                        
+                    }
+                    .size(5);
+                    height: 249px;
+                }
+
+                .second-item {
+                    background-image: url(../assets/img/img-information-item-2.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    margin-right: 40px;
+                    .sm-block({
+                        margin-bottom: 30px;
+                                
+                    });
+                    .page__text {
+                        color: @color_white;
+                        position: relative;
+                        top: 30px;
+                        left: 50px;
+                        font-size: 25px;
+                    }
+
+                    .page__img {
+                        position: relative;
+                        top: 110px;
+                    }
+                    .size(5);
+                    height: 249px;
+                }
+
+                .third-item {
+                    background-image: url(../assets/img/img-information-item-3.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    margin-right: 30px;
+                    margin-bottom: 30px;
+                    .page__text {
+                        color: @color_white;
+                        position: relative;
+                        top: 30px;
+                        left: 50px;
+                        font-size: 25px;
+                    }
+
+                    .page__img {
+                        position: relative;
+                        top: 110px;
+                    }
+                    .size(5);
+                    height: 249px;
+                }
+
+                .fourth-item {
+                    background-image: url(../assets/img/img-information-item-4.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    
+                    .page__text {
+                        color: @color_white;
+                        position: relative;
+                        top: 30px;
+                        left: 50px;
+                        font-size: 25px;
+                    }
+
+                    .page__img {
+                        position: relative;
+                        top: 110px;
+                    }
+                    .size(5);
+                    height: 249px;
+                }
+            }
+        }
+    }
+}

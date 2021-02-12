@@ -22,6 +22,18 @@
         font-size: 18px;
         color: @color_dark;
         line-height: 33px;
+        &_small {
+            font-family: "@{OpenSans}-Regular";
+            font-size: 14px;
+            color: @color_dark;
+            line-height: 19px;
+        }
+        &_gray {
+            font-family: "@{OpenSans}-Bold";
+            font-size: 20px;
+            line-height: 27px;
+            color: @color_gray;
+        }
         &_nunito {
             font-family: "@{Nunito_Sans}-Regular";
             color: @color_white;
@@ -29,6 +41,13 @@
                 font-family: "@{Nunito_Sans}-Regular";
                 color: #ade0ce;
                 font-size: 14px;
+            }
+
+            &-dark {
+                font-family: "@{Nunito_Sans}-Bold";
+                font-size: 25px;
+                color: @color_dark-2;
+                line-height: 33px;
             }
         }
     }
@@ -76,11 +95,39 @@
             font-family: '@{OpenSans}-Bold';
             //text-transform: uppercase;
             color: @color_white;
-            background-color: @color_green;
-            border: 1px solid #fff;
+            background-color: transparent;
             padding-right: 15px;
             padding-left: 15px;
-            border: none;
+            border: 1px solid #fff;
+            &-have {
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                border-radius: 35px;
+                height: 55px;
+                font-size: 14px;
+                letter-spacing: 1px;
+                line-height: 30px;
+                font-family: '@{OpenSans}-Bold';
+                //text-transform: uppercase;
+                color: @color_white;
+                background-color: @color_green;
+                padding-right: 15px;
+                padding-left: 15px;
+                border: 1px solid #fff;
+                &:hover {
+                    background-color: @color_green;
+                    transition: all ease-out 0.5s;
+                    border: none;
+                }
+            }
+            &:hover {
+                background-color: @color_green;
+                transition: all ease-out 0.5s;
+                border: none;
+            }
         }
 
         &_transparent {
@@ -102,11 +149,12 @@
             border: 1px solid #fff;
             padding-right: 15px;
             padding-left: 15px;
+            &:hover {
+                background-color: @color_green;
+                transition: all ease-out 0.5s;
+                border: none;
+            }
             
-        }
-
-        &:hover {
-            background-color: @color_green;
         }
     }
 }

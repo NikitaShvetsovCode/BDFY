@@ -1,0 +1,74 @@
+.steps {
+    background-image: url(../assets/img/img-steps-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-bottom: 160px;
+    overflow: hidden;
+    .sm-block({
+        background-position: bottom;
+                
+    });
+    .page__title-h2 {
+        .sm-block({
+            padding-top: 20px;
+                    
+        });
+        padding-top: 100px;
+        margin-bottom: 20px;
+    }
+    .page__text {
+        .size(7);
+        .sm-block({
+            .size(10);
+                    
+        });
+        margin-bottom: 60px;
+    }
+    &-block {
+        .row-flex();
+        .sm-block({
+            //flex-direction: column;
+                    
+        });
+        flex-wrap: nowrap;
+        &-items {
+            .row-flex();
+            
+            &-item {
+                .row-flex();
+                .sm-block({
+                    .size(6);
+                            
+                });
+                .col();
+                .size(4.1);
+                .page__text {
+                    padding-left: 30px;
+                    margin-bottom: 30px;
+                    .size(5);
+                    
+                }
+                .page__img {
+                    margin-bottom: 30px;
+                    .sm-block({
+                        position: relative;
+                        left: 27px;
+                                
+                    });
+                }
+
+                
+                
+            }
+
+            .left {
+                position: relative;
+                left: -120px;
+                .sm-block({
+                    left: 0;
+                            
+                });
+            }
+        }
+    }
+}

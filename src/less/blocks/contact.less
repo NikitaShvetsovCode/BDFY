@@ -1,0 +1,33 @@
+.contact {
+    background-color: @color_green;
+    overflow: hidden;
+    &-block {
+        .row-flex();
+        //flex-wrap: nowrap;
+        .page__title-h2 {
+            .size(10.5);
+            color: @color_white;
+            font-size: 38px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            .sm-block({
+                .shift-left(1);
+                font-size: 24px;
+                line-height: 30px;
+                padding-bottom: 20px;
+                        
+            });
+        }
+
+        .page__btn_transparent {
+            margin-top: 45px;
+            .sm-block({
+                margin-top: 5px;
+                .size(8);
+                .shift-left(1);
+                margin-bottom: 40px;
+                        
+            });
+        }
+    }
+}
