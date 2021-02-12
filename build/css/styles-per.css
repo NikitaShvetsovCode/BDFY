@@ -1579,6 +1579,7 @@ input:focus {
 
 .footer-block .banner-block-description__soc .banner-block-description__soc_linked {
   position: relative;
+  bottom: 8px;
 }
 
 @media screen and (max-width: 920px) {
