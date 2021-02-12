@@ -1583,6 +1583,35 @@ input:focus {
   bottom: 8px;
 }
 
+@media screen and (max-width: 1370px) {
+  .wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .debugGrid > div {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .debugGrid > div {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .partners-block .page__title-h2 {
+    left: 590px;
+  }
+
+  .footer-block .banner-block-description__soc .banner-block-description__soc_facebook {
+    left: -600px;
+  }
+
+  .footer-block .banner-block-description__soc .banner-block-description__soc_linked {
+    left: -590px;
+  }
+}
+
 @media screen and (max-width: 920px) {
   .wrapper {
     padding-left: 15px;

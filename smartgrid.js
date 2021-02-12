@@ -7,6 +7,10 @@ module.exports = {
         fields: "90px"
     },
 	breakPoints: {
+        mmd: {
+            width: "1370px",
+            fields: "15px"
+        },
 		md: {
             width: "920px",
             fields: "15px"
